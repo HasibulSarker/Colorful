@@ -135,7 +135,7 @@ p.col-md-12 {
 .projects-part {
   color: #87ceeb;
   background-color: #444243;
-  font-size: 17px;
+  font-size: 18.3px;
   line-height: 1.9;
   padding: 32px 10px;
 }
@@ -223,7 +223,7 @@ p > strong {
     font-style: italic;
   }
   .projects-part p {
-    font-size: 15.5px;
+    font-size: 16.5px;
     padding: 7px;
   }
   .p-margin {
@@ -313,9 +313,6 @@ p > strong {
   .inrto-row {
     width: 90%;
     margin: 0 auto;
-  }
-  .projects-part {
-    font-size: 18px;
   }
 }
 @media screen and (min-width: 1025px) {

@@ -132,6 +132,27 @@ p.col-md-12 {
   max-width: 433px;
   margin: 0 auto;
 }
+.projects-part {
+  color: #87ceeb;
+  background-color: #444243;
+  font-size: 17px;
+  line-height: 1.9;
+  padding: 32px 10px;
+}
+.projects-part > h3,.cover-container {
+  margin-bottom: 33px;
+}
+.cover-container {
+  padding: 0 3px;
+}
+.cover {
+  box-shadow: 0 0 14px #ffffff;
+  border-radius: 6px;
+  margin-bottom: 17px;
+}
+p > strong {
+  color: #ffd700;
+}
 .animation {
   animation-name: motion;
   animation-duration: 2s;
@@ -201,6 +222,17 @@ p.col-md-12 {
     font-size: 16.5px;
     font-style: italic;
   }
+  .projects-part p {
+    font-size: 15.5px;
+    padding: 7px;
+  }
+  .p-margin {
+    margin-bottom: 10px;
+    text-align: initial;
+  }
+  .cover {
+    margin-bottom: 6px;
+  }
 }
 
 /********** END OF MOBILE-VIEW ************/
@@ -232,8 +264,8 @@ p.col-md-12 {
   .margin {
     margin-top: 42px;
   }
-  #certification p {
-    font-size: 17.6px;
+  #certification p,.projects-part {
+    font-size: 17px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -256,6 +288,16 @@ p.col-md-12 {
 
 /*********** END OF TABLET VIEW  ***************/
 
+@media screen and (min-width: 768px) {
+  .cover-container {
+    max-width: 337px;
+    max-height: 100%;
+  }
+  .container-1 {
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .navbar-light .navbar-nav .nav-link {
     border-radius: 15px;
@@ -272,10 +314,13 @@ p.col-md-12 {
     width: 90%;
     margin: 0 auto;
   }
+  .projects-part {
+    font-size: 18px;
+  }
 }
 @media screen and (min-width: 1025px) {
   .about {
-    font-size: 2.45vw;
+    font-size: 35px;
     margin-top: auto;
     padding: 0 0 40px 0;
   }

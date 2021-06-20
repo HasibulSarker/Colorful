@@ -140,13 +140,13 @@ p.col-md-12 {
   padding: 32px 10px;
 }
 .projects-part > h3,.cover-container {
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 .cover-container {
   padding: 0 3px;
 }
 .cover {
-  box-shadow: 0 0 14px #ffffff;
+  box-shadow: 0 0 6px #ffffff;
   border-radius: 6px;
   margin-bottom: 17px;
 }
@@ -218,20 +218,18 @@ p > strong {
     padding-bottom: 20px;
     padding-top: 5px;
   }
-  #certification p {
+  #certification p,.projects-part p {
     font-size: 16.5px;
-    font-style: italic;
-  }
-  .projects-part p {
-    font-size: 16.5px;
-    padding: 7px;
   }
   .p-margin {
+    padding: 7px;
     margin-bottom: 10px;
-    text-align: initial;
   }
   .cover {
     margin-bottom: 6px;
+  }
+  .cover-container {
+    margin-bottom: 24px;
   }
 }
 

@@ -60,35 +60,34 @@ a.navbar-brand {
   color: #ffffff;
   font-family: "Bangers", cursive;
 }
-.skill-Part {
-  font-weight: 600;
+.experience-section {
+  line-height: 1.9;
   padding: 80px 0 25px 0;
   background-color: #a38560;
 }
-.skill-persent {
-  font-weight: 600;
+.highlight {
+  font-weight: bold;
   color: #ffff00;
   display: inline-block;
   margin-top: 5px;
 }
-.skill-style {
-  color: #000000;
-  font-size: 1.5em;
-  margin-bottom: 20px;
+.experience-section > h1 {
+  font-size: 1.4em;
+  line-height: inherit;
   font-weight: 600;
 }
-p.sk-p {
+.experience-section > p {
   margin-top: 27px;
-  line-height: 2;
+  font-size: 21.5px;
 }
-.sec-2 {
+.experience-section > p > span {
   color: #ffffff;
 }
 .footer {
   background-color: #d3dfb8;
   padding: 30px 5px;
 }
-.down {
+.footer-container {
   width: 35%;
   margin: 60px auto;
 }
@@ -110,8 +109,8 @@ p.sk-p {
 .start-text {
   text-align: start;
 }
-.sp-icon {
-  margin: 25px 0;
+.icon-col-margin {
+  margin: 30px 0;
 }
 .navbar-light .navbar-nav .nav-link {
   border-radius: 50px;
@@ -131,7 +130,7 @@ p.sk-p {
   font-size: 20px;
   padding: 0 11px;
 }
-.sec-p {
+.certi-p-2 {
   color: #ff1493;
   margin-top: 6px;
 }
@@ -139,17 +138,18 @@ p.sk-p {
   margin: 27px 0;
   padding: 0 10px;
 }
-.projects-part {
+.projects-section {
   color: #87ceeb;
   background-color: #444243;
   font-size: 18.3px;
   line-height: 1.9;
   padding: 32px 10px;
 }
-.projects-part > h3,.cover-container {
+.projects-section > h3,
+.proj-cover-container {
   margin-bottom: 30px;
 }
-.cover-container {
+.proj-cover-container {
   padding: 0 3px;
 }
 .cover {
@@ -185,13 +185,8 @@ p > strong {
   .about > p {
     font-size: 22px;
   }
-  .skill-style {
+  .experience-section > h1 {
     font-size: 1.1em;
-    margin-bottom: 35px;
-  }
-  .margin {
-    font-size: 20px;
-    margin-top: 36px;
   }
   .footer > p {
     font-size: 17px;
@@ -202,20 +197,20 @@ p > strong {
     height: 90px;
     width: 90px;
   }
-  p.sk-p {
-    font-size: 19px;
+  .experience-section > p {
+    font-size: 18px;
     margin-top: 18px;
     padding: 16px 3px;
   }
-  .inrto-row {
+  .intro-division {
     width: 95%;
     margin: 0 auto;
   }
-  .down {
+  .footer-container {
     width: 65%;
     margin: 60px auto;
   }
-  .skill-Part {
+  .experience-section {
     padding-top: 50px;
   }
   .footer {
@@ -225,36 +220,38 @@ p > strong {
     padding-bottom: 20px;
     padding-top: 5px;
   }
-  #certification p,.projects-part p {
+  #certification p,
+  .projects-section p {
     font-size: 16.5px;
   }
-  .p-margin {
+  .project-p {
     padding: 7px;
     margin-bottom: 10px;
   }
   .cover {
     margin-bottom: 6px;
   }
+  .icon-col-margin {
+    margin: 22px 0;
+  }
 }
 
 /********** END OF MOBILE-VIEW ************/
 
 @media screen and (min-width: 451px) and (max-width: 767px) {
-  .down {
+  .footer-container {
     width: 60%;
     margin: 10% auto;
   }
-  .skill-Part {
+  .experience-section {
     padding: 60px 8px;
   }
-  .skill-style {
-    margin-bottom: 8%;
-    line-height: 1.6;
-    font-size: 1.4em;
+  .experience-section > h1 {
+    font-size: 1.3em;
   }
-  p.sk-p {
+  .experience-section > p {
     margin-top: 5%;
-    font-size: 22px;
+    font-size: 20px;
   }
   .footer > p {
     font-size: 19px;
@@ -263,10 +260,8 @@ p > strong {
   .about {
     padding: 8% 5px;
   }
-  .margin {
-    margin-top: 42px;
-  }
-  #certification p,.projects-part {
+  #certification p,
+  .projects-section {
     font-size: 17px;
   }
 }
@@ -276,12 +271,8 @@ p > strong {
     margin-top: auto;
     padding: 0 0 20px 0;
   }
-  .skill-Part {
+  .experience-section {
     padding: 55px 0;
-  }
-  .skill-style {
-    font-size: 1.4em;
-    margin-bottom: 40px;
   }
   #certification p {
     font-size: 18.7px;
@@ -291,15 +282,14 @@ p > strong {
 /*********** END OF TABLET VIEW  ***************/
 
 @media screen and (min-width: 768px) {
-  .cover-container {
+  .proj-cover-container {
     max-width: 337px;
     max-height: 100%;
   }
-  .container-1 {
+  .proj-container-1 {
     margin-left: auto;
   }
 }
-
 @media screen and (min-width: 992px) {
   .navbar-light .navbar-nav .nav-link {
     border-radius: 15px;
@@ -312,7 +302,7 @@ p > strong {
   #navigation {
     padding: 4px 0;
   }
-  .inrto-row {
+  .intro-division {
     width: 90%;
     margin: 0 auto;
   }
@@ -323,11 +313,8 @@ p > strong {
     margin-top: auto;
     padding: 0 0 40px 0;
   }
-  .skill-Part {
+  .experience-section {
     padding: 60px 0;
-  }
-  .skill-style {
-    margin-bottom: 48px;
   }
 }
 

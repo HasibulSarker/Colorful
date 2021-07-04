@@ -1,34 +1,15 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 body {
   font-family: "RocknRoll One", sans-serif;
   font-size: 20px;
   color: #000000;
   background-color: #f5f5f5;
 }
-.navbar {
-  position: static;
-}
-.preloader-wrapper {
-  background-color: #2f2d2e;
-  position: fixed;
-  top: 0;
-  height: 100%;
-  width: 100%;
-}
-.preloader {
-  position: absolute;
-  bottom: 42%;
-  width: 100%;
-}
+/****** NavBar ******/
 #navigation {
   background-color: #f2e86d;
 }
-#content {
-  background-color: #574d68;
+.navbar {
+  position: static;
 }
 li.nav-item {
   font-size: 18px;
@@ -50,16 +31,55 @@ a.navbar-brand {
 .navbar-light .navbar-toggler:active {
   border: 2px solid #fffafa;
 }
+.navbar-light .navbar-nav .nav-link {
+  border-radius: 50px;
+  margin-top: 10px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #000000;
+  background-color: #f0ffff;
+}
+/****** NavBar END *******/
+.preloader-wrapper {
+  background-color: #2f2d2e;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.preloader {
+  position: absolute;
+  bottom: 42%;
+  width: 100%;
+}
+/******* Intro Section ******/
+.about-section {
+  background-color: #574d68;
+  padding: 0 15px;
+}
 .about {
-  font-size: 26px;
-  padding: 10% 0;
   color: #ffff00;
-  text-align: center;
+  padding: 7% 2%;
+  margin-top: auto;
+}
+.about > h2 {
+  line-height: 1.5;
 }
 .secondpart {
-  color: #ffffff;
   font-family: "Bangers", cursive;
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 15px;
+
+  animation-name: motion;
+  animation-duration: 2s;
+  animation-direction: linear;
+  animation-delay: 3ms;
+  animation-iteration-count: infinite;
 }
+/****** END OF Intro *****/
+
+/***** SKill-Section *****/
 .experience-section {
   line-height: 1.9;
   padding: 80px 0 25px 0;
@@ -71,27 +91,38 @@ a.navbar-brand {
   display: inline-block;
   margin-top: 5px;
 }
-.experience-section > h1 {
+.experience-section > div.container-lg > h1 {
   font-size: 1.4em;
   line-height: inherit;
   font-weight: 600;
 }
-.experience-section > p {
+.experience-section > div.container-lg > p {
   margin-top: 27px;
   font-size: 21.5px;
 }
-.experience-section > p > span {
+.experience-section > div.container-lg > p > span {
   color: #ffffff;
 }
+.res-img {
+  height: 110px;
+  width: 110px;
+}
+.icon-col-margin {
+  margin: 30px 0;
+}
+/****** END OF SKill *****/
+
+/**** Footer Section ****/
 .footer {
   background-color: #d3dfb8;
   padding: 30px 5px;
+  line-height: 2.2;
 }
-.footer-container {
+.footer-icon-container {
   width: 35%;
-  margin: 60px auto;
+  margin: 70px auto;
 }
-.footer > p {
+.footer > div.container-lg > p {
   margin-top: 25px;
 }
 .footer-p {
@@ -99,27 +130,9 @@ a.navbar-brand {
   font-family: "Bangers", cursive;
   margin-right: 15px;
 }
-.res-img {
-  height: 110px;
-  width: 110px;
-}
-.end-text {
-  text-align: end;
-}
-.start-text {
-  text-align: start;
-}
-.icon-col-margin {
-  margin: 30px 0;
-}
-.navbar-light .navbar-nav .nav-link {
-  border-radius: 50px;
-  margin-top: 10px;
-}
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #000000;
-  background-color: #f0ffff;
-}
+/***** END OF Footer *****/
+
+/***** Certification Section *****/
 #certification {
   color: #000000;
   background-color: #f9da5b;
@@ -128,7 +141,7 @@ a.navbar-brand {
 #certification p {
   line-height: 1.8;
   font-size: 20px;
-  padding: 0 11px;
+  padding: 4px;
 }
 .certi-p-2 {
   color: #ff1493;
@@ -138,6 +151,9 @@ a.navbar-brand {
   margin: 27px 0;
   padding: 0 10px;
 }
+/***** END OF Certification ******/
+
+/***** Project Section *****/
 .projects-section {
   color: #87ceeb;
   background-color: #444243;
@@ -145,7 +161,7 @@ a.navbar-brand {
   line-height: 1.9;
   padding: 32px 10px;
 }
-.projects-section > h3,
+.projects-section > div.container-lg > h3,
 .proj-cover-container {
   margin-bottom: 30px;
 }
@@ -157,64 +173,50 @@ a.navbar-brand {
   border-radius: 6px;
   margin-bottom: 17px;
 }
-p > strong {
+.projects-section p > strong {
   color: #ffd700;
 }
-.animation {
-  animation-name: motion;
-  animation-duration: 2s;
-  animation-direction: linear;
-  animation-delay: 3ms;
-  animation-iteration-count: infinite;
-}
+/***** END OF Projects *****/
+
 @keyframes motion {
   0% {
     color: #0000ff;
   }
   100% {
-    color: inherit;
+    color: #ffffff;
   }
 }
 
 /************** Start Of Responsive Designs  ***************/
 
 @media screen and (min-width: 300px) and (max-width: 450px) {
-  .about {
-    padding: 8% 0;
+  .about > h2 {
+    font-size: 1.12em;
   }
-  .about > p {
-    font-size: 22px;
-  }
-  .experience-section > h1 {
+  .experience-section > div.container-lg > h1 {
     font-size: 1.1em;
   }
-  .footer > p {
+  .footer > div.container-lg > p {
     font-size: 17px;
     margin-top: 15px;
-    line-height: 2;
   }
   .res-img {
     height: 90px;
     width: 90px;
   }
-  .experience-section > p {
+  .experience-section > div.container-lg > p {
     font-size: 18px;
     margin-top: 18px;
     padding: 16px 3px;
   }
-  .intro-division {
-    width: 95%;
-    margin: 0 auto;
-  }
-  .footer-container {
+  .footer-icon-container {
     width: 65%;
-    margin: 60px auto;
   }
   .experience-section {
     padding-top: 50px;
   }
   .footer {
-    padding: 30px 0 0 0;
+    padding: 30px 0 5px 0;
   }
   .footer-p {
     padding-bottom: 20px;
@@ -239,26 +241,22 @@ p > strong {
 /********** END OF MOBILE-VIEW ************/
 
 @media screen and (min-width: 451px) and (max-width: 767px) {
-  .footer-container {
+  .footer-icon-container {
     width: 60%;
-    margin: 10% auto;
   }
   .experience-section {
     padding: 60px 8px;
   }
-  .experience-section > h1 {
+  .experience-section > div.container-lg > h1 {
     font-size: 1.3em;
   }
-  .experience-section > p {
+  .experience-section > div.container-lg > p {
     margin-top: 5%;
     font-size: 20px;
   }
-  .footer > p {
-    font-size: 19px;
+  .footer > div.container-lg > p {
+    font-size: 18px;
     margin-top: 15px;
-  }
-  .about {
-    padding: 8% 5px;
   }
   #certification p,
   .projects-section {
@@ -267,9 +265,11 @@ p > strong {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .about {
-    font-size: 2.92vw;
-    margin-top: auto;
-    padding: 0 0 20px 0;
+    padding: 0 0 10px 0;
+  }
+  .about > h2 {
+    font-size: 1.3em;
+    padding-left: 10px;
   }
   .experience-section {
     padding: 55px 0;
@@ -302,16 +302,14 @@ p > strong {
   #navigation {
     padding: 4px 0;
   }
-  .intro-division {
-    width: 90%;
-    margin: 0 auto;
-  }
 }
 @media screen and (min-width: 1025px) {
   .about {
     font-size: 33px;
-    margin-top: auto;
-    padding: 0 0 40px 0;
+    padding: 0 0 20px 0;
+  }
+  .about > h2 {
+    font-size: .91em;
   }
   .experience-section {
     padding: 60px 0;

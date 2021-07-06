@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=RocknRoll+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=RocknRoll+One&display=swap');
 body {
   font-family: "RocknRoll One", sans-serif;
   font-size: 20px;
@@ -19,7 +19,6 @@ li.nav-item {
 a.navbar-brand {
   font-family: "Bangers", cursive;
   font-size: 30px;
-  justify-self: start;
   margin-left: 3%;
 }
 .navbar-light .navbar-nav .nav-link {

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=RocknRoll+One&display=swap");
 body {
   font-family: "RocknRoll One", sans-serif;
   font-size: 20px;
@@ -70,12 +71,7 @@ a.navbar-brand {
   color: #ffffff;
   display: inline-block;
   margin-bottom: 15px;
-
-  animation-name: motion;
-  animation-duration: 2s;
-  animation-direction: linear;
-  animation-delay: 3ms;
-  animation-iteration-count: infinite;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
 }
 /****** END OF Intro *****/
 
@@ -111,26 +107,6 @@ a.navbar-brand {
   margin: 30px 0;
 }
 /****** END OF SKill *****/
-
-/**** Footer Section ****/
-.footer {
-  background-color: #d3dfb8;
-  padding: 30px 5px;
-  line-height: 2.2;
-}
-.footer-icon-container {
-  width: 35%;
-  margin: 70px auto;
-}
-.footer > div.container-lg > p {
-  margin-top: 25px;
-}
-.footer-p {
-  display: inline-block;
-  font-family: "Bangers", cursive;
-  margin-right: 15px;
-}
-/***** END OF Footer *****/
 
 /***** Certification Section *****/
 #certification {
@@ -178,14 +154,25 @@ a.navbar-brand {
 }
 /***** END OF Projects *****/
 
-@keyframes motion {
-  0% {
-    color: #0000ff;
-  }
-  100% {
-    color: #ffffff;
-  }
+/**** Footer Section ****/
+.footer {
+  background-color: #d3dfb8;
+  padding: 30px 5px;
+  line-height: 2.2;
 }
+.footer-icon-container {
+  width: 35%;
+  margin: 70px auto;
+}
+.footer > div.container-lg > p {
+  margin-top: 25px;
+}
+.footer-p {
+  display: inline-block;
+  font-family: "Bangers", cursive;
+  margin-right: 15px;
+}
+/***** END OF Footer *****/
 
 /************** Start Of Responsive Designs  ***************/
 

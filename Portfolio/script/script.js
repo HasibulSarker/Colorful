@@ -1,15 +1,15 @@
-let Global = this;
+let global = this;
 
-Global.addEventListener("DOMContentLoaded", function () {
+global.addEventListener("DOMContentLoaded", function () {
 
-  Global.onload = function () {
+  global.onload = function () {
     var invisible = document.querySelector(".preloader-wrapper");
 
     invisible.style.display = "none";
 
-    var PositionChange = document.querySelector(".navbar");
+    var positionChange = document.querySelector(".navbar");
 
-    PositionChange.style.position = "relative";
+    positionChange.style.position = "relative";
   };
   
 });

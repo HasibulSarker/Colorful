@@ -88,7 +88,7 @@ a.navbar-brand {
   height: 120px;
   width: 120px;
   border-radius: 28px;
-  box-shadow:  5px 5px 21px #7f684b, -5px -5px 21px #c7a275;
+  box-shadow:  5px 5px 25px #7f684b, -5px -5px 25px #c7a275;
   margin: 0 auto;
 }
 .highlight {

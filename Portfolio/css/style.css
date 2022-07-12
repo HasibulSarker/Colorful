@@ -5,6 +5,10 @@ body {
   color: #000000;
   background-color: #f5f5f5;
 }
+.svg-common {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
 /****** NavBar ******/
 #navigation {
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
@@ -77,8 +81,9 @@ a.navbar-brand {
 /***** SKill-Section *****/
 .experience-section {
   line-height: 1.9;
-  padding: 80px 0 25px 0;
+  padding: 80px 0 5.5% 0;
   background-color: #a38560;
+  background-image: url("../Images/SVG/wave.svg");
 }
 .round-card {
   background: linear-gradient(145deg, #937856, #ae8e67);
@@ -122,7 +127,8 @@ a.navbar-brand {
 #certification {
   color: #000000;
   background-color: #f9da5b;
-  padding: 32px 0 32px 0;
+  padding: 10px 0 5% 0;
+  background-image: url("../Images/SVG/wave-2.svg");
 }
 #certification p {
   line-height: 1.8;
@@ -145,7 +151,7 @@ a.navbar-brand {
   background-color: #444243;
   font-size: 18.3px;
   line-height: 1.9;
-  padding: 32px 10px;
+  padding: 0 10px 30px 10px;
 }
 .projects-section > div.container-lg > h3,
 .proj-cover-container {
@@ -207,6 +213,7 @@ a.navbar-brand {
   }
   .experience-section {
     padding-top: 50px;
+    background-image: url("../Images/SVG/wave-sm.svg");
   }
   .footer {
     padding: 30px 0 5px 0;
@@ -214,6 +221,9 @@ a.navbar-brand {
   .footer-p {
     padding-bottom: 20px;
     padding-top: 5px;
+  }
+  #certification {
+    background-image: url("../Images/SVG/wave-sm-2.svg");
   }
   #certification p,
   .projects-section p {
@@ -228,6 +238,9 @@ a.navbar-brand {
   }
   .icon-col-margin {
     margin: 22px 0;
+  }
+  .projects-section {
+    padding-top: 20px;
   }
 }
 
@@ -246,6 +259,7 @@ a.navbar-brand {
   .experience-section > div.container-lg > p {
     margin-top: 5%;
     font-size: 20px;
+    padding-bottom: 20px;
   }
   .footer > div.container-lg > p {
     font-size: 18px;
@@ -254,6 +268,9 @@ a.navbar-brand {
   #certification p,
   .projects-section {
     font-size: 17px;
+  }
+  #certification {
+    padding-bottom: 11%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -265,7 +282,7 @@ a.navbar-brand {
     padding-left: 10px;
   }
   .experience-section {
-    padding: 55px 0;
+    padding: 50px 0 70px 0;
   }
   #certification p {
     font-size: 18.7px;
@@ -303,9 +320,6 @@ a.navbar-brand {
   }
   .about > h2 {
     font-size: .91em;
-  }
-  .experience-section {
-    padding: 60px 0;
   }
 }
 

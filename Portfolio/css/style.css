@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=RocknRoll+One&display=swap');
+body {
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 20px;
+  color: #000000;
+  background-color: #f5f5f5;
+}
+/****** NavBar ******/
+#navigation {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.navbar {
+  position: static;
+}
+li.nav-item {
+  font-size: 18px;
+  margin-right: 40px;
+}
+a.navbar-brand {
+  font-family: "Bangers", cursive;
+  font-size: 30px;
+  margin-left: 3%;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #000000;
+}
+.navbar-light .navbar-toggler {
+  color: transparent;
+  border: 2px solid #000000;
+}
+.navbar-light .navbar-toggler:active {
+  border: 2px solid #fffafa;
+}
+.navbar-light .navbar-nav .nav-link {
+  border-radius: 50px;
+  margin-top: 10px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #000000;
+  background-color: #f0ffff;
+}
+/****** NavBar END *******/
+.preloader-wrapper {
+  background-color: #2f2d2e;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.preloader {
+  position: absolute;
+  bottom: 42%;
+  width: 100%;
+}
+/******* Intro Section ******/
+.about-section {
+  background-color: #574d68;
+  padding: 0 15px;
+}
+.about {
+  color: #ffff00;
+  padding: 7% 2%;
+  margin-top: auto;
+}
+.about > h2 {
+  line-height: 1.5;
+}
+.secondpart {
+  font-family: "Bangers", cursive;
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 15px;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+/****** END OF Intro *****/
+
+/***** SKill-Section *****/
+.experience-section {
+  line-height: 1.9;
+  padding: 80px 0 25px 0;
+  background-color: #a38560;
+}
+.round-card {
+  background: linear-gradient(145deg, #937856, #ae8e67);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 120px;
+  border-radius: 28px;
+  box-shadow:  5px 5px 25px #7f684b, -5px -5px 25px #c7a275;
+  margin: 0 auto;
+}
+.highlight {
+  font-weight: bold;
+  color: #ffff00;
+  display: inline-block;
+  margin-top: 5px;
+}
+.experience-section > div.container-lg > h1 {
+  font-size: 1.4em;
+  line-height: inherit;
+  font-weight: 600;
+}
+.experience-section > div.container-lg > p {
+  margin-top: 27px;
+  font-size: 21.5px;
+}
+.experience-section > div.container-lg > p > span {
+  color: #ffffff;
+}
+.res-img {
+  height: 90px;
+  width: 90px;
+}
+.icon-col-margin {
+  margin: 30px 0;
+}
+/****** END OF SKill *****/
+
+/***** Certification Section *****/
+#certification {
+  color: #000000;
+  background-color: #f9da5b;
+  padding: 32px 0 32px 0;
+}
+#certification p {
+  line-height: 1.8;
+  font-size: 20px;
+  padding: 4px;
+}
+.certi-p-2 {
+  color: #ff1493;
+  margin-top: 6px;
+}
+.certificate {
+  margin: 27px 0;
+  padding: 0 10px;
+}
+/***** END OF Certification ******/
+
+/***** Project Section *****/
+.projects-section {
+  color: #87ceeb;
+  background-color: #444243;
+  font-size: 18.3px;
+  line-height: 1.9;
+  padding: 32px 10px;
+}
+.projects-section > div.container-lg > h3,
+.proj-cover-container {
+  margin-bottom: 30px;
+}
+.proj-cover-container {
+  padding: 0 3px;
+}
+.cover {
+  box-shadow: 0 0 6px #ffffff;
+  border-radius: 6px;
+  margin-bottom: 17px;
+}
+.projects-section p > strong {
+  color: #ffd700;
+}
+/***** END OF Projects *****/
+
+/**** Footer Section ****/
+.footer {
+  background-image: linear-gradient( 135deg, #69FF97 10%, #00E4FF 100%);
+  padding: 30px 5px;
+  line-height: 2.2;
+}
+.footer-icon-container {
+  width: 35%;
+  margin: 70px auto;
+}
+.footer > div.container-lg > p {
+  margin-top: 25px;
+}
+.footer-p {
+  display: inline-block;
+  font-family: "Bangers", cursive;
+  margin-right: 15px;
+}
+/***** END OF Footer *****/
+
+/************** Start Of Responsive Designs  ***************/
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+  .about > h2 {
+    font-size: 1.12em;
+  }
+  .experience-section > div.container-lg > h1 {
+    font-size: 1.1em;
+  }
+  .footer > div.container-lg > p {
+    font-size: 17px;
+    margin-top: 15px;
+  }
+  .experience-section > div.container-lg > p {
+    font-size: 18px;
+    margin-top: 18px;
+    padding: 16px 3px;
+  }
+  .footer-icon-container {
+    width: 65%;
+  }
+  .experience-section {
+    padding-top: 50px;
+  }
+  .footer {
+    padding: 30px 0 5px 0;
+  }
+  .footer-p {
+    padding-bottom: 20px;
+    padding-top: 5px;
+  }
+  #certification p,
+  .projects-section p {
+    font-size: 16.5px;
+  }
+  .project-p {
+    padding: 7px;
+    margin-bottom: 10px;
+  }
+  .cover {
+    margin-bottom: 6px;
+  }
+  .icon-col-margin {
+    margin: 22px 0;
+  }
+}
+
+/********** END OF MOBILE-VIEW ************/
+
+@media screen and (min-width: 451px) and (max-width: 767px) {
+  .footer-icon-container {
+    width: 60%;
+  }
+  .experience-section {
+    padding: 60px 8px;
+  }
+  .experience-section > div.container-lg > h1 {
+    font-size: 1.3em;
+  }
+  .experience-section > div.container-lg > p {
+    margin-top: 5%;
+    font-size: 20px;
+  }
+  .footer > div.container-lg > p {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  #certification p,
+  .projects-section {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    padding: 0 0 10px 0;
+  }
+  .about > h2 {
+    font-size: 1.3em;
+    padding-left: 10px;
+  }
+  .experience-section {
+    padding: 55px 0;
+  }
+  #certification p {
+    font-size: 18.7px;
+  }
+}
+
+/*********** END OF TABLET VIEW  ***************/
+
+@media screen and (min-width: 768px) {
+  .proj-cover-container {
+    max-width: 337px;
+    max-height: 100%;
+  }
+  .proj-container-1 {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar-light .navbar-nav .nav-link {
+    border-radius: 15px;
+    padding: 5px 15px;
+  }
+  li > a.nav-link#home:nth-child(1) {
+    background-color: #f0ffff;
+    font-weight: 600;
+  }
+  #navigation {
+    padding: 4px 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .about {
+    font-size: 33px;
+    padding: 0 0 20px 0;
+  }
+  .about > h2 {
+    font-size: .91em;
+  }
+  .experience-section {
+    padding: 60px 0;
+  }
+}
+
+/*************** END OF DESKTOP-VIEW *******************/
+
+/************** END Of Responsive Design ***************/

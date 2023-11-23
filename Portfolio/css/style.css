@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&family=Ysabeau+SC:wght@600&display=swap');
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Ysabeau SC', sans-serif;
   font-size: 22px;
   color: #000000;
   background-color: #f5f5f5;
@@ -17,7 +17,7 @@ li.nav-item {
   margin-right: 40px;
 }
 a.navbar-brand {
-  font-family: 'Rubik Vinyl', cursive;
+  font-family: 'Pixelify Sans', sans-serif;
   font-size: 30px;
   margin-left: 3%;
 }
@@ -66,7 +66,7 @@ a.navbar-brand {
   line-height: 1.5;
 }
 .secondpart {
-  font-family: 'Rubik Vinyl', cursive;
+  font-family: 'Pixelify Sans', sans-serif;
   color: #ffffff;
   display: inline-block;
   margin-bottom: 15px;
@@ -179,7 +179,7 @@ a.navbar-brand {
 }
 .footer-p {
   display: inline-block;
-  font-family: 'Rubik Vinyl', cursive;
+  font-family: 'Pixelify Sans', sans-serif;
   margin-right: 15px;
 }
 /***** END OF Footer *****/

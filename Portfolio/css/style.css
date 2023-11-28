@@ -164,6 +164,42 @@ a.navbar-brand {
 }
 /***** END OF Projects *****/
 
+/***** Start of Contact Section *****/
+#contact {
+  background-color: #06BA63;
+}
+.contact-section-div {
+  font-size: 20px;
+  line-height: 1.9;
+  color: #fff8dc;
+  padding: 40px 10px 60px 10px;
+
+}
+.mail-image {
+  margin: 20px 0;
+}
+div.mail-button {
+  width: 170px;
+  background-color: #90ee90;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: 2px solid #fffafa;
+  box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.56);
+            -webkit-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.56);
+            -moz-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.56);
+  margin: 50px auto 0 auto;         
+  
+}
+.mail-button:hover {
+  background-color: #c6f91f;
+}
+.mail-button a {
+  text-decoration: none;
+  color: #61122f;
+}
+
+/***** End of Conatct Section *****/
+
 /**** Footer Section ****/
 .footer {
   background-image: linear-gradient( 135deg, #69FF97 10%, #00E4FF 100%);
@@ -228,6 +264,9 @@ a.navbar-brand {
   }
   .icon-col-margin {
     margin: 22px 0;
+  }
+  .contact-section-div {
+    font-size: 18.3px;
   }
 }
 
